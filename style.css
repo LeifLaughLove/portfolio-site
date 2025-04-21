@@ -91,6 +91,35 @@ body, h1, h2, p, ul {
     color: #ffcc00;
     text-decoration: none;
   }
+
+   /* This seciton sis for my second project card
+    right now I jsut have a question mark that floats 
+    as a palceholder */
+
+    .floating-sprite {
+        width: 64px;
+        height: auto;
+        margin: 140px auto;
+        animation: float 2s ease-in-out infinite;
+    }
+
+    .floating-sprite img {
+        width: 100%;
+        height: auto;
+        image-rendering: pixelated;
+    }
+
+    @keyframes float {
+        0% {transform: translateY(0px);}
+        50% { transform: translateY(-10px);}
+        100% {transform: translateY(0px); }
+    }
+
+    .future-card:hover .floating-sprite {
+        animation: none;
+        transform: translateY(-20px);
+        transition: transform 5s ease;
+      }
   
   /* Resume */
   #resume {
