@@ -111,14 +111,14 @@ body, h1, h2, p, ul {
 
     @keyframes float {
         0% {transform: translateY(0px);}
-        50% { transform: translateY(-10px);}
+        50% { transform: translateY(-80px);}
         100% {transform: translateY(0px); }
     }
 
     .future-card:hover .floating-sprite {
         animation: none;
         transform: translateY(-20px);
-        transition: transform 5s ease;
+        transition: transform 5s ease; 
       }
   
   /* Resume */
